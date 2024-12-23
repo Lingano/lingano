@@ -1,0 +1,65 @@
+.container {
+    padding: 20px;
+    text-align: center;
+}
+
+.heading {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.description {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.pricing {
+    margin: 20px 0;
+}
+
+.pricing h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.pricing p {
+    font-size: 1.2em;
+    margin: 5px 0;
+}
+
+.button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+.priceBox {
+    display: inline-block;
+    width: 150px;
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.priceAmount {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.priceDuration {
+    font-size: 1em;
+    color: #777;
+}

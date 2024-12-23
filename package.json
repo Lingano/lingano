@@ -1,0 +1,15 @@
+{
+    "name": "lingano-fullstack",
+    "version": "1.0.0",
+    "private": true,
+    "scripts": {
+        "heroku-postbuild": "cd client && npm install --include=dev && npm run build"
+    },
+    "engines": {
+        "node": ">=16.0.0 <19.0.0",
+        "npm": ">=8.x"
+    },
+    "dependencies": {
+        "lingano-fullstack": "file:"
+    }
+}

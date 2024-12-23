@@ -1,0 +1,77 @@
+.dictionary {
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    overflow-x: hidden;
+    overflow-y: auto;
+    box-sizing: border-box;
+
+    /**/
+    background-color: #ffffff; /* White background */
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin-top: 10px;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-bottom: 1%;
+
+    border: 1px solid rgba(174,145,82,1);
+}
+
+a {
+    text-decoration: none;
+}
+
+.body {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.firstWord {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.speaker {
+    display: flex;
+    align-items: center;
+}
+.firstWord p {
+    margin-left: 5px;
+}
+
+.wordsWrapper {
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 8%;
+    padding-right: 8%;
+
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+        rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+
+    border-radius: 20px;
+}
+
+.secondWord {
+    display: flex;
+    justify-content: center;
+}
+
+.sentencesWrapper {
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 5%;
+    padding-right: 5%;
+
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+        rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+
+    border-radius: 20px;
+}

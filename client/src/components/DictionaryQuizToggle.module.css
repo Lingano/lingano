@@ -1,0 +1,51 @@
+.headerQuiz {
+    /* must be same width as quiz/dictionary components in quiz/dictionary view */
+    width: 36vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgb(210, 210, 205, 1);
+    margin: 12px;
+
+    border: 5px solid rgb(210, 210, 200, 1);
+    border-radius: 14px;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.quizesLink{
+    flex: 1;
+    text-align: center;
+    height: 100%;
+    line-height: 30px;
+}
+
+.dictionaryLink{
+    flex: 1;
+    text-align: center;
+    line-height: 30px;
+}
+
+.active {
+    background-color: white;
+    border-radius: 10px;
+}
+.active a {
+    color: gray;
+}
+
+.headerFullpageQuiz {
+        /* must be same width as quiz components in fullpageQuiz view */
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background-color: lightgray;
+        margin: 12px;
+    
+        border: 5px solid lightgray;
+        border-radius: 14px;
+}

@@ -1,0 +1,46 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title} official API reference.
+  span This list of all currently supported API endpoints should be updated if you create a new one.
+  p In principle, this should contain exactly the same data as the public docs (or more if we decide to not share parts of our API) but it still should be updated so that we can have backend-specific docs separate for clarification from the main docs.
+  h2 Also consult postman!!!!
+  ul
+    li Users Router
+    span CURRENTLY NOT USED WILL BE USED LATER ON !!!
+    ul
+      li: a(href='/users') /users
+      span The main link, returns a JSON of user data.
+      li: a(href='/users/get_user_data') /users/get_user_data
+      span POST | headers: { authorization: token }  | return: current user data
+      li: a(href='/users/add-user') /users/add-user
+      span POST | body: {name, email, password} | return: newly created user object.
+      li: a(href='/users/delete-user/:id') /users/delete-user/:id
+      span DELETE | params: {id} | return: success message.
+    li Reading Router
+    span Main router handling the transfer of reading objects between client and server.
+    ul
+      li: a(href='/reading/get') /reading/get
+      span POST | body: {id}, cookie with token | return: reading object (the entire thing) of id=internal_user_id.
+      li: a(href='/reading') /reading
+      span POST | body: {title, text}, cookie with token | return: newly created reading object.
+      li: a(href='/reading/get_all_current_user_readings') /reading/get_all_current_user_readings
+      span GET | cookie with token | return: returns all reading objects assigned to the user that fetches.
+      li: a(href='/reading/get_all_public') /reading/get_all_public
+      span GET | return: returns all public reading objects in an array.
+      li: a(href='/reading/delete') /reading/delete
+      span DELETE | body: {id} headers: { authorization: token } | return: success message.
+    li Auth Router
+    span This router is responsible for working with user authentication and authorization.
+    ul
+      li: a(href='/auth/login') /auth/login
+      span POST | body: {email, password} | return: user_data and cookie with JWT token.
+      li: a(href='/auth/register') /auth/register
+      span POST | body: {name, email, password} | return: user_data and cookie with JWT token.
+      li: a(href='/auth/access_user_data') /auth/access_user_data
+      span GET | cookie with token | return: current user data.
+      li: a(href='/auth/logout') /auth/logout
+      span POST | return: currently implemented only for the frontend, don't use it.
+      li: a(href='/auth/password-reset') /auth/password-reset
+      span GET | return: for future implementation, don't use it.

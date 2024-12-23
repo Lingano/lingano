@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300">
+  <!-- Background Gradient -->
+  <defs>
+    <linearGradient id="skyGradient" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#87ceeb" />
+      <stop offset="100%" stop-color="#d0f0f7" />
+    </linearGradient>
+    <linearGradient id="mountainGradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#3c6e71" />
+      <stop offset="100%" stop-color="#2a4d50" />
+    </linearGradient>
+    <linearGradient id="snowGradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#f4f4f4" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Sky -->
+  <rect width="400" height="300" fill="url(#skyGradient)" />
+
+  <!-- Mountain -->
+  <path d="M50 250 L200 50 L350 250 Z" fill="url(#mountainGradient)" stroke="#1e3932" stroke-width="3" />
+
+  <!-- Snowcap -->
+  <path d="M180 90 L200 50 L220 90 Q200 70 180 90 Z" fill="url(#snowGradient)" />
+</svg>
+

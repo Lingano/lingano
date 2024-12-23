@@ -1,0 +1,308 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    align-items: center;
+    z-index: 10;
+}
+
+button {
+    position: relative;
+    z-index: 3;
+}
+
+.imageContainer {
+    height: 50px;
+    margin-left: 30px;
+}
+
+header img {
+    height: 100%;
+    object-fit: contain;
+}
+
+.headerButtons {
+    margin-right: 20px;
+}
+
+header button {
+    margin-right: 15px;
+    background-color: none;
+}
+
+.loginButton {
+    color: rgba(53,55,69,1);
+    background-color: transparent;
+    font-weight: bold;
+}
+.loginButton:hover {
+    background-color: transparent;
+}
+.loginButton::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2.5px; /* thickness of the underline */
+    background-color: rgba(53, 55, 69, 1);
+    transition: width 0.3s ease-in-out;
+}
+.loginButton:hover::after {
+    width: 100%; /* expand the width to full when hovering */
+}
+
+.registerButton {
+    font-weight: bold;
+    color: rgba(53,55,69,1);
+    border: 2px solid rgba(53,55,69,1);
+    border-radius: 20px;
+    background-color: transparent;
+}
+.registerButton:hover {
+    background-color: transparent;
+    box-shadow: 0 0 0 1px rgba(53, 55, 69, 1), inset 0 0 0 1px transparent;
+}
+
+main {
+    margin-top: 100px;
+}
+
+section {
+    width: 100vw;
+    height: calc(100vh - 100px);
+}
+
+.firstSection h1 {
+    padding-top: 10%;
+}
+
+.firstSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    object-fit: cover;
+    background-position: center;
+
+}
+
+.firstSection button {
+    background-color: rgba(53,55,69,1);
+    border: 2px solid rgba(53,55,69,1);
+    border-radius: 20px;
+    margin: 0;
+    margin-top: 20px;
+}
+.firstSection button:hover {
+    background-color: transparent;
+    color: rgba(53,55,69,1);
+}
+
+.firstSection::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../landing_page/landing-background.png');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.1;
+    z-index: 0;
+}
+
+.firstSection::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, #c6c6b5 0%, rgba(0, 0, 255, 0) 70%);
+    background-size: 100% 100%;
+    z-index: 1;
+}
+
+.secondSection {
+    background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(230,236,243,1) 70%);
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+
+.left {
+    width: 40vw;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.right {
+    display: flex;
+    width: 60vw;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;    
+}
+
+section img {
+    max-width: 88%;
+    max-height: 88%;
+    height: auto;
+    width: auto;
+    object-fit: contain;
+    padding: 0;
+    border: 5px solid rgba(174,145,82,1);
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+}
+
+section p {
+    margin-left: 8%;
+    margin-right: 8%;
+    font-size: 18px;
+}
+
+
+
+.thirdSection {
+    display: flex;
+    background-color: rgba(230,236,243,1);
+    height: 100vh;
+}
+
+.fourthSection {
+    display: flex;
+    background: linear-gradient(to top, rgba(255,255,255,1) 0%, rgba(230,236,243,1) 70%);
+    height: 100vh;
+}
+
+.quizImage {
+    max-width: 45%;
+    max-height: 45%;
+    margin-right: 5%;
+}
+
+.flashcardImage {
+    max-width: 40%;
+    max-height: 40%;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: linear-gradient(to top, #c6c6b5 50%, rgba(0, 0, 255, 0) 100%);
+    height: 100vh;
+
+    border-top: 5px dashed white;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+
+    border-image-source: url("https://i.sstatic.net/wLdVc.png");
+    border-image-slice: 2;
+    border-image-repeat: round;
+
+    border-image: url("https://i.sstatic.net/wLdVc.png") 2 round;
+    padding-top: 100px;
+}
+
+.descriptionBlock {
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.gridWrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.team {
+    flex: 1;
+    text-align: center;
+}
+
+.technologies {
+    flex: 1;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer {
+    text-align: center;
+    padding: 5px;
+    color: gray;
+    background-color: #c6c6b5;
+}
+
+footer ul {
+    list-style: none;
+}
+
+li {
+    padding: 10px;
+    margin: 3px;
+    border-radius: 10px;
+    border: 1px solid rgba(53,55,69,1);
+    color: rgba(53,55,69,1);
+}
+
+.techGrid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 10px;
+    gap: 10px;
+}
+
+.line {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+}
+
+.imgWrapper {
+    flex: 0;
+    align-items: center;
+}
+
+.descriptionWrapper {
+    flex: 1;
+}
+
+.descriptionWrapper span {
+    color: rgba(53,55,69,1);
+    font-weight: bold;
+}
+
+.imgWrapper img {
+    width: 80px;
+    height: 80px;
+}
+
+.credits {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.credits a {
+    color: black;
+}
+
+.credits a:hover {
+    text-decoration: underline;
+}

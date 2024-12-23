@@ -1,0 +1,24 @@
+/* .starButton {
+    position: absolute;
+    top: 5%;
+    right: 3%;
+    background: none;
+    border: none;
+    color: black; 
+    font-size: 2.1em;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    outline: none;
+    z-index: 2; 
+}
+
+.starButtonActive {
+    color: yellow !important;
+    background-color: orange !important;
+}
+
+.starButton:hover {
+    background-color: rgb(185,180,151) !important;
+}
+
+ */

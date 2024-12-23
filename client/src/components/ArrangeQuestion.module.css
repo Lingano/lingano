@@ -1,0 +1,100 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+h3 {
+    margin: 0;
+}
+
+blockquote {
+    background: #ffffff;
+    border-left: 8px solid wheat;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin: 1em 20px;
+    padding: 1.5em 2em;
+    border-radius: 12px;
+    position: relative;
+    font-family: "Georgia", serif;
+    font-size: 1.2em;
+    color: #333;
+}
+
+blockquote:before,
+blockquote:after {
+    font-family: "Georgia", serif;
+    font-size: 3em; /* quote marks size */
+    font-weight: bold;
+    color: wheat; /* quotes mark color */
+    position: absolute;
+}
+
+blockquote:before {
+    content: "“"; /* open quote */
+    top: -20px; /* position above the blockquote */
+    left: 10px;
+}
+
+blockquote:after {
+    content: "”"; /* close quote */
+    bottom: -20px; /* position below the blockquote */
+    right: 10px;
+}
+
+blockquote p {
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.description {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.wordsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 10px;
+    margin-top: 1em;
+}
+
+.word {
+    padding: 5px 10px;
+    margin: 5px;
+    background-color: wheat;
+    border: 1px solid #ccc;
+    cursor: grab;
+    border-radius: 10px;
+}
+
+.word:active {
+    cursor: grabbing;
+}
+
+.button {
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.button:disabled {
+    background-color: #d3d3d3;
+    color: #a0a0a0;
+    cursor: not-allowed;
+}
+
+.correctMessage {
+    color: green;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.incorrectMessage {
+    color: red;
+    font-size: 16px;
+    margin-top: 10px;
+}

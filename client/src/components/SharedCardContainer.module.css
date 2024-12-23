@@ -1,0 +1,102 @@
+/* SharedCardContainer.module.css */
+/* CSS for shared texts (so it displays user name and user icon */
+
+/* styling of the card container (almost equal to ReadingCardContainer style but
+with some modifications to fit the different design) */
+
+.SingleSharedCardContainer {
+    display: flex;
+    flex-direction: column;
+    transform: scale(1);
+}
+
+
+.CardContainer {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease, margin 0.3s ease, transform 0.3s ease;
+    overflow: hidden;
+    margin: 3px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+
+    /* fixed dimensions for uniform size */
+    width: 300px;
+    height: 200px;
+    /* preventing cards from stretching */
+    flex-shrink: 0;
+    flex-grow: 0;
+}
+
+.CardContainer:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: scale(1.03);
+}
+
+.CardHeader {
+    font-size: 15px;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 8px;
+}
+
+.CardHeader h3 {
+    margin: 0;
+}
+
+.CardBody {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Styling for optional card image */
+/* .CardImage {
+    width: 100%;
+    height: 200px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+} */
+
+.UserHeader {
+    flex: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.UserHeader:hover {
+    transform: scale(1.03);
+}
+
+.UserIcon {
+    margin-left: 5px;
+}
+.UserIcon img {
+    border-radius: 30px;
+}
+
+.UserName {
+    line-height: 5px;
+    margin-left: 5px;
+}
+
+.CardLanguage {
+    font-size: 0.9em;
+    color: #999;
+    display: flex;
+}
+
+.CardLanguage p {
+    line-height: 20px;
+    margin-left: 3px;
+}

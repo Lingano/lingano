@@ -1,0 +1,90 @@
+/* styling of the card container */
+
+.CardContainer {
+    position: relative;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 1em;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    overflow: hidden;
+    flex: 1 1 auto;
+    margin: 3px;
+    box-sizing: border-box;
+
+    /* fixed dimensions for uniform size */
+    width: 300px;
+    height: 200px;
+    /* preventing cards from stretching */
+    flex-shrink: 0;
+    flex-grow: 0;
+}
+
+.CardContainer:hover {
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
+}
+
+.CardContent {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.CardTitle {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 0.5em;
+}
+
+.CardPreview {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 0.5em;
+}
+
+.CardLanguage {
+    font-size: 0.9em;
+    color: #999;
+    display: flex;
+}
+
+.CardLanguage p {
+    line-height: 20px;
+    margin-left: 3px;
+}
+
+.DeleteButton {
+    position: absolute;
+    top: 0.5em;
+    right: -1em;
+    background-color: transparent;
+    border: none;
+    width: 1.5em;
+    height: 1.5em;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 20px;
+    padding: 8px;
+}
+
+.CardContainer:hover .DeleteButton {
+    display: flex;
+}
+
+.DeleteButton:hover {
+    background-color: rgba(255, 0, 0, 0.2);
+}
+
+/* in case we want to add an image to the card */
+/* .CardImage {
+    width: 100%;
+    height: 200px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+} */

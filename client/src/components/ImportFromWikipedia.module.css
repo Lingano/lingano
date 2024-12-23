@@ -1,0 +1,36 @@
+.wikiImportWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.label {
+    font-size: 16px;
+}
+
+.input {
+    width: 90%;;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+.importButton {
+    margin: 0;
+    background-color: rgba(174,145,82,1);
+}
+
+.importButton:hover {
+    background-color: rgba(222,187,78,1);
+}
+
+.importButton:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}

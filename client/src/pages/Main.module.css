@@ -1,0 +1,107 @@
+/* CSS for main page content */
+/* MainPageContent.module.css */
+
+.Reading {
+    min-height: 100vh; /* Ensure it covers the viewport height */
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f4f2ec;
+}
+
+h2 {
+    font-size: 25px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.ReadingCardsContainer,
+.SharedCardsContainer {
+    display: flex;
+    flex-wrap: nowrap; /* no wrapping to new rows */
+    overflow-x: auto;
+    gap: 20px; /* maintain spacing between cards */
+    padding-bottom: 10px;
+    /* hiding horizontal scroll bar (for various browserss) */
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+}
+/* hiding horizontal scroll bar for Safari */
+.ReadingCardsContainer::-webkit-scrollbar,
+.SharedCardsContainer::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+.SharedCardsContainer {
+    padding-top: 5px;
+    padding-left: 5px;
+}
+
+.titleSelectionWrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.titleSelectionWrapper h2 {
+    all: unset;
+    font-size: 25px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding-right: 20px;
+}
+
+.select {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background-color: #fff;
+    border: 1px solid rgba(174,145,82,1);
+    border-radius: 5px;
+    padding: 10px 40px 10px 15px;
+    font-size: 16px;
+    color: rgba(174,145,82,1);
+    width: 200px;
+    cursor: pointer;
+    position: relative;
+}
+
+.select:focus {
+    border-color: rgba(174,145,82,1);
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.selectWrapper {
+    position: relative;
+    display: inline-block;
+    width: 200px;
+}
+
+.selectWrapper::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #333;
+    pointer-events: none;
+}
+
+.selectWrapper select {
+    width: 100%;
+    appearance: none;
+}
+
+
+
+
+/* rgba(174,145,82,1) */
